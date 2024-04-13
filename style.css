@@ -1,0 +1,180 @@
+body {
+    background-color: #EBEBEB;
+}
+hr {
+    width: 80%;
+    background-color:#65A9D0;
+}
+
+/*config da box principal */
+
+.box {
+    border: 3px solid #97C3DD;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding-top: 20px;
+}
+
+.box input {
+    margin-left: 15px;
+    margin-bottom: 15px;
+   
+}
+
+.box .inputs input {
+    width: 90%;
+    height: 35px;
+    font-size: 15px;
+    text-indent: 5px;
+}
+
+.box h6{
+    margin-left: 15px;
+    color: #33B5FF;
+}
+
+.box h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #33B5FF; 
+
+}
+
+/*Checkbox "Manter login"*/
+
+.manter_logado {
+    display: inline;
+    font-weight: none;
+    color: black;
+}
+
+.manter_logado h6{
+    display: inline;
+    text-indent: -20px;
+}
+
+
+
+/* BOTÃO CADASTRAR*/
+
+.cadastrar {
+    /*101, 169, 208*/
+    background-color: rgba(101, 169, 208, 0.6);
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 30px;
+    padding-right: 22px;
+}
+
+.cadastrar h6 {
+    margin-top: 6px;
+    color: #fff;
+}
+
+.cadastrar .btn{
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    
+}
+
+.bloco_cadastrar {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.bloco_cadastrar a {
+    margin-left: 10px;
+}
+
+.bloco_cadastrar a:active {
+    margin-left: 10px;
+    color: #33B5FF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.bloco_cadastrar a:hover {
+    text-decoration: none;
+}
+
+
+/*BOTÃO LOGAR\CRIAR*/
+
+.botao_submit {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botao_submit button {
+    width: 90%;
+    background-color: #33B5FF;
+    
+}
+
+/* MEDIA QUERIES */
+
+/*dispositivos small*/
+@media screen and (max-width: 300px){
+    .box {
+        width: 250px;
+    }
+
+    .box .inputs input {
+        width: 90%;
+    }
+
+    .bloco_cadastrar h6, .bloco_cadastrar a {
+        font-size: 10px;
+    }
+
+    form h1 {
+        font-size: 25px;
+    }
+
+}
+
+/*celulares*/
+@media screen and (min-width: 301px) and (max-width: 600px) {
+    .box {
+        width: 90%;
+    }
+
+    .box .inputs input {
+        width: 90%;
+    }
+
+    .bloco_cadastrar h6, .bloco_cadastrar a {
+        font-size: 12px;
+    }
+
+    }
+
+
+/*para dispositivos maiores*/
+@media screen and (min-width: 601px) {
+    .box {
+        width: 500px;
+    }
+}
+
+
+
+
+
+
