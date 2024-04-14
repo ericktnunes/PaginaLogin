@@ -9,7 +9,8 @@
 
         $email = $_POST['email'];
         $senha = $_POST['senha'];
-        $sql = "SELECT * FROM usuarios WHERE email = '$email' and senha = '$senha'";
+        $senhacrip = md5($senha);
+        $sql = "SELECT * FROM usuarios WHERE email = '$email' and senha = '$senhacrip'";
 
         $resultado = $conexao->query($sql);
 

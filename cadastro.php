@@ -10,6 +10,7 @@
     $cpf = $_POST['cpf'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
+    $senhacrip = md5($senha);
 
         
 
@@ -21,7 +22,7 @@
 
         if(mysqli_num_rows($result) < 1) 
         {
-            $resultado = mysqli_query($conexao, "INSERT INTO usuarios(nome, cpf, email, senha) VALUES ('$nome', '$cpf', '$email', '$senha')");
+            $resultado = mysqli_query($conexao, "INSERT INTO usuarios(nome, cpf, email, senha) VALUES ('$nome', '$cpf', '$email', '$senhacrip')");
             $_SESSION['msg'] = "<p style = 'color:green; margin-left: 15px;'>Cadastro realizado com sucesso</p>";
         } else { 
             unset($_SESSION['email']);
